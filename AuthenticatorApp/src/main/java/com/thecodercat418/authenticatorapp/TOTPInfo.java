@@ -25,12 +25,14 @@ public class TOTPInfo {
     private long counter;
     public TOTPInfo(String name){
         this.name = name;
-        this.sr = new SecureRandom();
+        String oh = "JBSWY3DPEHPK3PXP";
+        this.sr = new SecureRandom(oh.getBytes());
         createdTime = Date.from(Instant.now());
     }
     public Key getKey(){
         try {
-            var kg = KeyGenerator.getInstance("DES");
+            var kg = KeyGenerator.getInstance("HmacSHA1");
+            System.out.println(sr.nextInt());
             kg.init(keySize, sr);
             return kg.generateKey();
         } catch (NoSuchAlgorithmException ex) {

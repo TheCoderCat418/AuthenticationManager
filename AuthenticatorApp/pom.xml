@@ -9,6 +9,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
-        <exec.mainClass>com.thecodercat418.authenticatorapp.AuthenticatorApp</exec.mainClass>
     </properties>
+    <dependencies>
+        <dependency>
+  <groupId>dev.samstevens.totp</groupId>
+  <artifactId>totp</artifactId>
+  <version>1.7.1</version>
+        </dependency>
+    </dependencies>
 </project>

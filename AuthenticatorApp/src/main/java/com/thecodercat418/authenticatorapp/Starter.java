@@ -10,7 +10,7 @@ package com.thecodercat418.authenticatorapp;
  */
 public class Starter {
     public static void main(String[] args) {
-        var TOTPInfo = new TOTPInfo("wa");
-        TOTPGen.generateKey(TOTPInfo);
+//        var TOTPInfo = new TOTPInfo("wa");
+//        TOTPGen.generateKey(TOTPInfo);
     }
 }
