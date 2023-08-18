@@ -1,0 +1,5 @@
+com\mycompany\authappgui\SecondaryController.class
+module-info.class
+com\mycompany\authappgui\App.class
+com\mycompany\authappgui\PrimaryController.class
+com\mycompany\authappgui\Main.class
